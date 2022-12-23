@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.irfanirawansukirman.algostudiotest">
+    package="com.irfanirawansukirman.telkomindonesiatest">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".MainApplication"
+        android:name="com.irfanirawansukirman.telkomindonesiatest.MainApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -18,13 +17,7 @@
         android:theme="@style/Theme.AlgostudioTest"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.memedetail.MemeDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.splashscreen.SplashscreenActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.memes.MemesActivity"
+            android:name="com.irfanirawansukirman.telkomindonesiatest.presentation.news.NewsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

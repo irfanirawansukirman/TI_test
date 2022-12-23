@@ -1,6 +1,6 @@
 object Android {
 
-    const val applicationId = "com.irfanirawansukirman.algostudiotest"
+    const val applicationId = "com.irfanirawansukirman.telkomindonesiatest"
     const val compileSdk = 33
     const val buildTools = "32.0.0"
     const val minSdk = 23

@@ -6,5 +6,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Algostudio Test"
+rootProject.name = "Telkom Indonesia Test"
 include(":app")

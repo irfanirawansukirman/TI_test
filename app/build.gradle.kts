@@ -22,7 +22,7 @@ android {
         // that the app's state is completely cleared between tests.
         testInstrumentationRunnerArguments += mapOf("clearPackageData" to "true")
 
-        buildConfigField("String", "API_URL", "\"https://api.imgflip.com/\"")
+        buildConfigField("String", "API_URL", "\"https://hacker-news.firebaseio.com/v0/\"")
     }
 
     buildTypes {
@@ -56,23 +56,13 @@ android {
 dependencies {
     implementation(App.appCompat)
     implementation(App.coreKtx)
-    implementation(App.constraintLayout)
     implementation(App.viewModelKtx)
-    implementation(App.activityKtx)
-    implementation(App.fragmentKtx)
     implementation(App.swipeRefresh)
     implementation(App.materialUi)
 
     implementation(App.retrofit2)
     implementation(App.loggingInterceptor)
     implementation(App.okhttp)
-
-    implementation(App.permissionX)
-    implementation(App.androidImagePicker)
-    implementation(App.fileCompressor)
-
-    implementation(App.dagger)
-    kapt(App.daggerCompiler)
 
     implementation(App.coil)
 
@@ -84,7 +74,12 @@ dependencies {
     implementation(App.converterMoshi)
     kapt(App.moshiKotlinCodegen)
 
+    implementation(App.koin)
+
     testImplementation(App.junit)
+    testImplementation(App.coreTesting)
+    testImplementation(App.mockk)
+    testImplementation(App.coroutinesTest)
     androidTestImplementation(App.espressoCore)
     androidTestImplementation(App.junitExt)
 }
